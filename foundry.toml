@@ -3,6 +3,7 @@ src = "src"
 out = "out"
 libs = ["lib"]
 solc = "0.8.20"
+# solc = "0.6.12"
 eth-rpc-url = "127.0.0.1:8545"  
 [rpc_endpoints]
 sepolia = "${SEPOLIA_RPC_URL}"

@@ -21,7 +21,9 @@ contract Reentrance {
             if (result) {
                 _amount;
             }
+        unchecked {
             balances[msg.sender] -= _amount;
+        }
         }
     }
 
