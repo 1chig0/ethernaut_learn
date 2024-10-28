@@ -2,4 +2,4 @@ forge-std/=lib/forge-std/src/
 
 @openzeppelin/=lib/openzeppelin-contracts/contracts/
 
-# @openzeppelin6/=lib/openzeppelin-contracts-6/contracts/
+//@openzeppelin6/=lib/openzeppelin-contracts-6/contracts/

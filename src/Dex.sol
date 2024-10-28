@@ -40,11 +40,9 @@ contract Dex is Ownable {
         SwappableToken(token2).approve(msg.sender, spender, amount);
     }
 
-
     function balanceOf(address token, address account) public view returns (uint256) {
         return IERC20(token).balanceOf(account);
     }
-
 }
 
 contract SwappableToken is ERC20 {

@@ -2,12 +2,10 @@
 pragma solidity ^0.8.0;
 
 import "../src/Dex.sol";
-import "../src/Dex_exp.sol";
 import {console, Script} from "forge-std/Script.sol";
 
 contract DexScript is Script{
     uint256 public deployer ;
-    Dex_exp dex_exp;
     Dex dex;
     address token1;
     address token2;
