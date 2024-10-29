@@ -1,3 +1,8 @@
+## Ethernaut 学习使用的脚本
+
+完结撒花
+
+
 ## Foundry
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
